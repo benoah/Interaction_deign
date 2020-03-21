@@ -1,0 +1,114 @@
+/*html*/
+body, html {
+    height: 100%;
+  }
+/*Header Part one*/
+/*Social media logo*/
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 30px;
+    text-align: inherit;
+    text-decoration: none;
+    border-radius: 50%;
+    display: flex;
+}
+
+  .socialMedia{
+    display: flex;
+    margin-left: 20%;
+    justify-content: flex-end;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  /*Header Part two*/
+  .headertwo {
+      background-color: black;
+      height: 70px;
+  }
+
+  .nav-item{
+      display: flex;
+  }
+  .nav-item a{
+      color: #ffffff;
+      font-family: helvetica neue, Arial, Helvetica, sans-serif;
+
+      font-size: 12px weight 400;
+    }
+
+    main { 
+        /* The image used */
+        background-image:url(/Interaction_Design/img/rugby-3718779_1280.jpg);
+      
+        /* Full height */
+        height: 100%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+    .breadcrumb{
+        background-color:#BEBEBE;
+        opacity: 52%;
+       
+    }
+   
+    .breadcrumb >.active a {
+        color: black;
+     }
+
+
+.footer{
+    background-color: black
+    ;
+}
+
+     fba-links {
+        text-align: right;
+    }
+    
+    .fba-links ul li a {
+        color: #000000;
+        display: block;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .fba-links ul {
+        list-style: outside none none;
+        padding: 0;
+    }
+    .fba-links ul li {
+        display: inline-block;
+        margin-left: 28px;
+    }
+    .fba-copyright p {
+        color: #aaaaaa;
+        line-height: 30px;
+    }
+
+
