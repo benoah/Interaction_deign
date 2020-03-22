@@ -1,6 +1,8 @@
 /*html*/
 body, html {
     height: 100%;
+    background-image:url(/Interaction_Design/img/rugby-3718779_1280.jpg);
+
   }
 /*Header Part one*/
 /*Social media logo*/
@@ -18,6 +20,11 @@ body, html {
     display: flex;
     margin-left: 20%;
     justify-content: flex-end;
+  }
+
+  .media{
+      display: inline-flex;
+      
   }
 
   .fa:hover {
@@ -59,18 +66,7 @@ body, html {
       font-size: 12px weight 400;
     }
 
-    main { 
-        /* The image used */
-        background-image:url(/Interaction_Design/img/rugby-3718779_1280.jpg);
-      
-        /* Full height */
-        height: 100%; 
-      
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
+     
       
     .breadcrumb{
         background-color:#BEBEBE;
@@ -81,28 +77,34 @@ body, html {
     .breadcrumb >.active a {
         color: black;
      }
-
-     fba-links {
-        text-align: right;
-    }
+.container{
+    background-color:whitesmoke ;
+    padding:8px;
+}
     
-    .fba-links ul li a {
-        color: #000000;
-        display: block;
-        font-size: 14px;
-        letter-spacing: 0;
-    }
-    .fba-links ul {
-        list-style: outside none none;
-        padding: 0;
-    }
-    .fba-links ul li {
-        display: inline-block;
-        margin-left: 28px;
-    }
-    .fba-copyright p {
-        color: #aaaaaa;
-        line-height: 30px;
-    }
+footer .container {
+    background-color:#545B60;
+    color: #E1D467;
+}
+
+footer a{
+    color: #E1D467;
+}
+
+#logoheader{
+    background-color: white;
+    height: 50px;
+}
+
+#white{
+    color: white;
+}
+
+
+.mystyle{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
 
 

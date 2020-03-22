@@ -1,0 +1,21 @@
+    fba-links {
+        text-align: right;
+    }
+    
+    .fba-links ul li a {
+        color: #000000;
+        display: block;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .fba-links ul {
+        list-style: outside none none;
+        padding: 0;
+    }
+
+
+    
+    .fba-links ul li {
+        display: inline-block;
+        margin-left: 28px;
+    }
