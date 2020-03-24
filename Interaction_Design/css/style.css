@@ -1,110 +1,254 @@
-/*html*/
-body, html {
-    height: 100%;
-    background-image:url(/Interaction_Design/img/rugby-3718779_1280.jpg);
 
-  }
-/*Header Part one*/
-/*Social media logo*/
-.fa {
-    padding: 10px;
-    font-size: 15px;
-    width: 30px;
-    text-align: inherit;
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     text-decoration: none;
-    border-radius: 50%;
-    display: flex;
+    box-sizing: border-box;
+    transition: .3s all;
+}
+ body {
+
+  
+    background: url(/Interaction_Design/img/rugby-3718779_1280.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  
+
+
 }
 
-  .socialMedia{
-    display: flex;
-    margin-left: 20%;
-    justify-content: flex-end;
-  }
+html{
+  height: 100%;
+}
+/*header*/
+header {
+  background: black;
+  z-index: 100;
+  margin-top:auto;
+}
 
-  .media{
-      display: inline-flex;
-      
-  }
+nav ul li a {
+  color:white;
+  display: block;
+  font-size: 90%;
+  font-weight: bold;
+  font-family: Arial;
+  letter-spacing: 1px;
+  border-top: 1.5px solid  #000 transparent;
+  border-bottom: 1.5px solid  #000 transparent;
+}
 
-  .fa:hover {
-    opacity: 0.7;
+.active {
+  border-bottom: 1.5px solid #ff7700;
+  opacity: 1;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+}
+.fa {
+  padding: 20px;
+  font-size: 15px;
+  width: 50px;
+  margin:  5px;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
 }
 
 .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
-
-  /*Header Part two*/
-  .headertwo {
-      background-color: black;
-      height: 70px;
-  }
-
-  .nav-item{
-      display: flex;
-  }
-  .nav-item a{
-      color: #ffffff;
-      font-family: helvetica neue, Arial, Helvetica, sans-serif;
-
-      font-size: 12px weight 400;
-    }
-
-     
-      
-    .breadcrumb{
-        background-color:#BEBEBE;
-        opacity: 52%;
-       
-    }
-   
-    .breadcrumb >.active a {
-        color: black;
-     }
-.container{
-    background-color:whitesmoke ;
-    padding:8px;
+  background: #3B5998;
+  color: white;
 }
-    
-footer .container {
-    background-color:#545B60;
-    color: #E1D467;
+.fa-google {
+  background: #dd4b39;
+  color: white;
 }
 
-footer a{
-    color: #E1D467;
-}
-
-#logoheader{
-    background-color: white;
-    height: 50px;
-}
-
-#white{
-    color: white;
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
 
 
-.mystyle{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5%;
+
+/*footer*/
+.site-footer
+{
+  background-color:#000000;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+/*Product detail page */
+
+.main-section{
+  
+}
+.left-side-product-box img{
+	width: 100%;
+}
+
+.left-side-product-box .sub-img img{
+	margin-top:5px;
+	width:83px;
+	height:100px;
+}
+.right-side-pro-detail span{
+	font-size:15px;
+}
+.right-side-pro-detail p{
+	font-size:25px;
+	color:#a1a1a1;
+}
+.right-side-pro-detail .price-pro{
+	color:#E45641;
+}
+.right-side-pro-detail .tag-section{
+	font-size:18px;
+	color:#5D4C46;
+}
+.pro-box-section .pro-box img{
+	width: 100%;
+	height:200px;
+}
+@media (min-width:360px) and (max-width:640px) {
+	.pro-box-section .pro-box img{
+		height:auto;
+	}
+}
+
+.hedding{
+	font-size: 20px;
+	color:#ab8181`;
+}
+.main-section{
+	position: auto;
+	left:50%;
+	right:50%;
+  transform: translate(-50%,5%);
+  margin-bottom: 15%;
+}
+#logo{
+  width: 25%;
+}
+
+section{
+  max-width: 90%;
 }
 
 
+.breadcrumb{
+  background-color:#000;
+  opacity: 60%;
+  margin-top: 8px;
+  margin-bottom: 8px;   
+}
+
+.breadcrumb >.active a {
+  color: white;
+}
+.breadcrumb a{
+  color:  white;
+}
