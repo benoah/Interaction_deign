@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- My  CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,9 +26,16 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="pcp.html">shop<span class="sr-only">(current)</span></a>
-              </li>
+              <!-- Dropdown -->
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">shop<span class="sr-only">(current)</span></a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink1">
+              <a class="dropdown-item" href="Shop.html">Shop</a>
+              <a class="dropdown-item" href="pcp.html">product Category</a>
+              <a class="dropdown-item active" href="pdp.html">Shadowball detail page</a>
+            </div>
+          </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://shadowball.co.za/academy/">Academy</a>
               </li>
@@ -42,49 +53,47 @@
 </form>
 <!-- The social media icon bar -->
 <div class="icon-bar">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-  <a href="#" class="google"><i class="fa fa-google"></i></a>
-  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+  <a href="https://www.facebook.com/search/top/?q=shadowball" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/SHADOWBALLteam" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.youtube.com/watch?v=h4r_o-A_VyU" class="youtube"><i class="fa fa-youtube"></i></a>
 </div>
       </nav>
   </header>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <li class="breadcrumb-item"><a href="#">Shop</a></li>
-      <li class="breadcrumb-item"><a href="#">Shadowball´<s></s></a></li>
-      <li class="breadcrumb-item active" aria-current="page">Product category</li>
-    </ol>
-  </nav>
 <main>
-
     <section class="jumbotron text-center">
         <div class="container">
             <h1 class="jumbotron-heading">Product Category</h1>
             <p class="lead text-muted mb-0">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte...</p>
         </div>
     </section>
-    <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Product Category</li>
+      </ol>
+    </nav>
+    <div class="container prøv">
         <div class="row">
             <div class="col-12 col-sm-3">
-                <div class="card bg-light mb-3">
-                    <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Categories</div>
-                    <ul class="list-group category_block">
-                        <li class="list-group-item"><a href="category.html">Shadowball´s</a></li>
-                        <li class="list-group-item"><a href="category.html">Rugby</a></li>
-                        <li class="list-group-item"><a href="category.html">Gear and clothes</a></li>
-                    </ul>
-                </div>
-                <br>
+                               <div class="dropdown">
+                  <div class="card bg-dark mb-3">
+                          <div class="card-header bg-primary bg-dark text-white text-uppercase">Categories</div>
+                  <ul class="list-group  category_block">
+                      <li class="list-group-item bg-dark "><a href="pdp.html.html">Shadowball´s</a></li>
+                      <li class="list-group-item bg-dark "><a href="pcp.html ">Rugby</a></li>
+                      <li class="list-group-item bg-dark "><a href="">Gear and clothes</a></li>
+                  </ul>
+              </div>
+              </div>
+                <br>          
                 <div class="card bg-light mb-3">
                     <div class="card-header bg-success text-white text-uppercase">Last product</div>
                     <div class="card-body">
                         <img class="img-fluid" src="/Interaction_Design/img/products/shadowballs/pro-advancer/01.jpg" />
                         <h5 class="card-title">Shadowball´s pro Advance</h5>
                         <p class="card-text">Our pro ball is used by some of the best teams in South Africa and is made of the best material you can get you hand in </p>
-                        <p class="bloc_left_price">99.00 $</p>
+                        <p class="bloc_left_price">29.00 $</p>
                     </div>
                 </div>
             </div>
@@ -94,14 +103,14 @@
                         <div class="card">
                             <img class="card-img-top" src="/Interaction_Design/img/products/shadowballs/pro-advancer/01.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Shadowball + Pro Advance</a></h4>
+                                <h4 class="card-title"><a href="pdp.html" title="View Product">Shadowball + Pro Advance</a></h4>
                                 <p class="card-text">Weighted rugby training ball</p>
                                 <div class="row">
                                     <div class="col">
-                                        <p class="bloc_left_price">99.00 $</p>
+                                        <p class="bloc_left_price">29.00 $</p>
                                     </div>
                                     <div class="col">
-                                        <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                                        <a href="pdp.html" class="btn btn-success btn-block">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
@@ -111,125 +120,63 @@
                         <div class="card">
                             <img class="card-img-top" src="/Interaction_Design/img/products/shadowballs/pro-advancer/01.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Shadowball Pro </a></h4>
-                                <p class="card-text">The original Size 5 rebounding rugby training ball</p>
+                                <h4 class="card-title"><a href="pdp.html" title="View Product">Shadowball Pro </a></h4>
+                                <p class="card-text"> rebounding rugby training ball</p>
+                                <p class="bloc_left_price">size 5</p>
                                 <div class="row">
                                     <div class="col">
-                                        <p class="bloc_left_price">size 5</p>
                                         <p class="bloc_left_price">99.00 $</p>
                                     </div>
                                     <div class="col">
-                                        <a href="#" class="btn btn-success btn-block">Add to cart</a>
+                                        <a href="pdp.html" class="btn btn-success btn-block">Add to cart</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="btn btn-danger btn-block">99.00 $</p>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="btn btn-danger btn-block">99.00 $</p>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="btn btn-danger btn-block">99.00 $</p>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-                            <div class="card-body">
-                                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="btn btn-danger btn-block">99.00 $</p>
-                                    </div>
-                                    <div class="col">
-                                        <a href="#" class="btn btn-success btn-block">Add to cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
+                      <div class="card">
+                          <img class="card-img-top" src="/Interaction_Design/img/products/shadowballs/pro-advancer/01.jpg" alt="Card image cap">
+                          <div class="card-body">
+                              <h4 class="card-title"><a href="product.html" title="View Product">Shadowball Pro </a></h4>
+                              <p class="card-text"> rebounding rugby training ball</p>
+                              <p class="bloc_left_price">size 5</p>
+                              <div class="row">
+                                  <div class="col">
+                                      <p class="bloc_left_price">99.00 $</p>
+                                  </div>
+                                  <div class="col">
+                                      <a href="pdp.html" class="btn btn-success btn-block">Add to cart</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
-    
         </div>
     </div>
+  <div class="container prøv">
+    <div id="side" class="col-12 form-text">
+      <nav aria-label="...">
+          <ul class="pagination">
+              <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active">
+                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+  </div>
 </main>
-<div id="side" class="col-12 form-text">
-    <nav aria-label="...">
-        <ul class="pagination">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item active">
-                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
 <section class="newsletterarea">
     <div class="container">
       <!-- Newsletter -->
@@ -243,85 +190,44 @@
         </div>
         <!-- End Newsletter -->
       </div>
-  
   </section>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
-  
-  
-  
-  
-  
-  
-  
-  
-       <!-- Site footer -->
-       <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <h6>About</h6>
-              <p class="text-justify">Sports champions <i>CODE WANTS TO BE </i>know that practice makes permanent, so it is crucial that your technique is right from the start. The ShadowBall Pass Booster programme was created with this vision and the ShadowBall Academy is ensuring that it is delivered to rugby players nationwide, radically upskilling passing and catching abilities.“The principle that says practice makes perfect is just not true,” says ShadowBall inventor, Gary Crookes. “If a player uses the wrong techniques, they will not be able to improve their skills.
-  
-                “Once I had designed the ShadowBall, it was imperative that we work out how a player or a coach could effectively use the tool and get massive increases in passing and catching abilities within a very short space of time,” he says.</p>
-            </div>
-  
-            <div class="col-xs-6 col-md-3">
-              <h6></h6>
-         
-            </div>
-  
-            <div class="col-xs-6 col-md-3">
-              <h6>Quick Links</h6>
-              <ul class="footer-links">
-                <li><a href="index.html">About Us</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="pcp.html">Products</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr>
+   <!-- Site footer -->
+   <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Sports champions <i>CODE WANTS TO BE </i>know that practice makes permanent, so it is crucial that your technique is right from the start. The ShadowBall Pass Booster programme was created with this vision and the ShadowBall Academy is ensuring that it is delivered to rugby players nationwide, radically upskilling passing and catching abilities.“The principle that says practice makes perfect is just not true,” says ShadowBall inventor, Gary Crookes. “If a player uses the wrong techniques, they will not be able to improve their skills.
+            “Once I had designed the ShadowBall, it was imperative that we work out how a player or a coach could effectively use the tool and get massive increases in passing and catching abilities within a very short space of time,” he says.</p>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-           <a href="index.html">Shadowball</a>.
-              </p>
-            </div>
-  
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-               
-              </ul>
-            </div>
-          </div>
+        <div class="col-xs-6 col-md-3">
         </div>
-  </footer>
-
- 
-
-
-
-
-
-
- 
-
-
-
-    
-    
-
-   <!-- Optional JavaScript -->
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="pcp.html">Products</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="index.html">Shadowball</a>.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+    <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
